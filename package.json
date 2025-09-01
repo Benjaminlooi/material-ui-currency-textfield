@@ -1,6 +1,6 @@
 {
   "name": "@benjaminlooi/material-ui-currency-textfield",
-  "version": "0.9.2",
+  "version": "0.10.0",
   "description": "Currency input textfield for react with Material-ui style",
   "keywords": [
     "material design",
