@@ -1,15 +1,15 @@
-# Unicef material-ui currency textfield [![npm](https://img.shields.io/npm/v/@unicef/material-ui-currency-textfield.svg?style=flat-square)](https://www.npmjs.com/package/@unicef/material-ui-currency-textfield)
+# Benjaminlooi material-ui currency textfield [![npm](https://img.shields.io/npm/v/@benjaminlooi/material-ui-currency-textfield.svg?style=flat-square)](https://www.npmjs.com/package/@benjaminlooi/material-ui-currency-textfield)
 
-[View on Github](https://github.com/unicef/material-ui-currency-textfield)
+[View on Github](https://github.com/benjaminlooi/material-ui-currency-textfield)
 ## Installation
  ```bash
- npm install @unicef/material-ui-currency-textfield --save
+ npm install @benjaminlooi/material-ui-currency-textfield --save
 ```
 ## Usage
 
 ```html
 import React from 'react'
-import CurrencyTextField from '@unicef/material-ui-currency-textfield'
+import CurrencyTextField from '@benjaminlooi/material-ui-currency-textfield'
 
 export default function MyComponent() {
 
