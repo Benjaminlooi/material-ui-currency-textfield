@@ -1,14 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import AutoNumeric from "autonumeric"
-import { withStyles } from "@material-ui/styles"
-import { TextField, InputAdornment } from "@material-ui/core"
+import { TextField, InputAdornment } from "@mui/material"
 
-const styles = theme => ({
-  textField: props => ({
-    textAlign: props.textAlign || "right",
-  }),
-})
 
 /**
  * CurrencyTextField is a [react](https://reactjs.org/) component with automated currency and number format, and with [Material-ui](https://material-ui.com/) look and feel.
@@ -23,6 +17,8 @@ const styles = theme => ({
  * * It accepts all the `props` and `classes` of Material-Ui <a href="https://material-ui.com/api/text-field/#textfield-api">TextField API</a> (Ex: classes, label, helperText, variant).
  * * And also all the `options` from <a href="http://autonumeric.org/guide">AutoNumeric</a>
  */
+
+// test 2
 
 class CurrencyTextField extends React.Component {
   constructor(props) {
@@ -49,12 +45,12 @@ class CurrencyTextField extends React.Component {
     this.autonumeric.remove()
   }
 
-  componentWillReceiveProps(newProps) {
+  componentDidUpdate(prevProps) {
     const isValueChanged =
-      this.props.value !== newProps.value && this.getValue() !== newProps.value
+      prevProps.value !== this.props.value && this.getValue() !== this.props.value
 
     if (isValueChanged) {
-      this.autonumeric.set(newProps.value)
+      this.autonumeric.set(this.props.value)
     }
   }
 
@@ -72,10 +68,10 @@ class CurrencyTextField extends React.Component {
   }
   render() {
     const {
-      classes,
       currencySymbol,
       inputProps,
       InputProps,
+      textAlign,
       ...others
     } = this.props
 
@@ -124,7 +120,9 @@ class CurrencyTextField extends React.Component {
           ...InputProps,
         }}
         inputProps={{
-          className: classes.textField,
+          sx: {
+            textAlign: textAlign || "right",
+          },
           ...inputProps,
         }}
         {...otherProps}
@@ -216,6 +214,6 @@ CurrencyTextField.defaultProps = {
   maximumValue: "10000000000000",
   minimumValue: "-10000000000000",
 }
-export default withStyles(styles)(CurrencyTextField)
+export default CurrencyTextField
 
 export const predefinedOptions = AutoNumeric.getPredefinedOptions()

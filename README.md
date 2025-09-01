@@ -1,11 +1,11 @@
 # Material-ui currency textfield
-[![npm version](https://badge.fury.io/js/%40unicef%2Fmaterial-ui-currency-textfield.svg)](https://badge.fury.io/js/%40unicef%2Fmaterial-ui-currency-textfield)
+[![npm version](https://badge.fury.io/js/%40benjaminlooi%2Fmaterial-ui-currency-textfield.svg)](https://badge.fury.io/js/%40benjaminlooi%2Fmaterial-ui-currency-textfield)
 
 `CurrencyTextField` is a  [Material-ui](https://material-ui.com/) [react](https://reactjs.org/) component. It provides a user friendly experience while inputing currency numbers. 
 
 `CurrencyTextField` wraps the functionality of <a href="https://github.com/autoNumeric/autoNumeric">autonumeric</a> and it is a port of <a href="https://github.com/mkg0/react-numeric">react-numeric</a> in Material-ui.
 
-![Example of material](https://raw.githubusercontent.com/unicef/material-ui-currency-textfield/master/material-ui-currency-field.gif)
+![Example of material](https://raw.githubusercontent.com/benjaminlooi/material-ui-currency-textfield/master/material-ui-currency-field.gif)
 
 Main features:
  * Adds thousands separator automatically.
@@ -16,17 +16,17 @@ Main features:
 ## Install
 
  ```bash
- npm install @unicef/material-ui-currency-textfield --save
+ npm install @benjaminlooi/material-ui-currency-textfield --save
 ```
 
 ## Usage
 
-**[Documentation and live demo is available here](https://unicef.github.io/material-ui-currency-textfield/)**
+**[Documentation and live demo is available here](https://benjaminlooi.github.io/material-ui-currency-textfield/)**
 
 
 ```jsx
 import React from 'react'
-import CurrencyTextField from '@unicef/material-ui-currency-textfield'
+import CurrencyTextField from '@benjaminlooi/material-ui-currency-textfield'
 
 export default function MyComponent() {
 
@@ -53,7 +53,7 @@ export default function MyComponent() {
 
 In order to extend the component, clone the project and install the dependencies.
 ```bash
-$ git clone https://github.com/unicef/material-ui-currency-textfield.git
+$ git clone https://github.com/benjaminlooi/material-ui-currency-textfield.git
 $ npm install
 ```
 
@@ -67,7 +67,7 @@ Builds the component outputing it in the `dist` folder. It is refreshed everytim
 npm start
 ```
 
-To see the output in the browser run the example app ([/example](https://github.com/unicef/material-ui-currency-textfield/tree/master/example))
+To see the output in the browser run the example app ([/example](https://github.com/benjaminlooi/material-ui-currency-textfield/tree/master/example))
 
 ```bash
  cd example 
@@ -95,21 +95,19 @@ We use [styleguidelist](https://react-styleguidist.js.org/) for documenting our 
 Builds the styleguide documentation for production. The output targets the `styleguide` folder.
 
 
-## About UNICEF
+## About the Author
 
-[UNICEF](https://www.unicef.org/) works in over 190 countries and territories to protect the rights of every child. UNICEF has spent more than 70 years working to improve the lives of children and their families. In UNICEF, we **believe all children have a right to survive, thrive and fulfill their potential – to the benefit of a better world**.
-
-[Donate](https://donate.unicef.org/donate/now)
+This is a fork of the original UNICEF material-ui-currency-textfield project, maintained by Benjamin Looi.
 
 
 ## Collaborations and support
 
-Just fork the project and make a pull request. You may also [consider donating](https://donate.unicef.org/donate/now).
+Just fork the project and make a pull request.
 
 
 ## License
 
-Copyright (c) 2019 UNICEF.org
+Copyright (c) 2019 UNICEF.org (original), 2024 Benjamin Looi (fork)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
